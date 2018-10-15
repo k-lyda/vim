@@ -7,6 +7,8 @@ set number              " show line numbers
 set cursorline          " highlight current line
 set wildmenu            " visual autocomplete for command menu
 set showcmd             " show command in bottom bar
+set ic                  " ignore casesentivity during search
+set hls                 " highlight partial search 
 
 " Search down into subfolders
 " Provides tab-completition for all file-related tasks
