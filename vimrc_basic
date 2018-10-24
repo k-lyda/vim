@@ -32,6 +32,7 @@ set showcmd             " show command in bottom bar
 set ic                  " ignore casesentivity during search
 set hls                 " highlight partial search 
 let mapleader = ","
+set laststatus=2
 
 " Search down into subfolders
 " Provides tab-completition for all file-related tasks
