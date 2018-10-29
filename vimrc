@@ -15,7 +15,9 @@ call vundle#begin()
         Plugin 'tpope/vim-surround'
         Plugin 'tpope/vim-fugitive'
         Plugin 'tpope/vim-commentary'
-        Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+        Plugin 'tomasiser/vim-code-dark'
+        Plugin 'vim-airline/vim-airline'
+        Plugin 'vim-airline/vim-airline-themes'
  
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,4 +55,12 @@ let mapleader = ","
 let python_highlight_all=1
 syntax on
 set laststatus=2
+
+" Airline options
+let g:airline_theme='codedark'                    " Use the kalisi theme!
+let g:airline_powerline_fonts=1                   " Enable powerline fonts.
+set noshowmode                                    " Don't show mode in command line.
+let g:airline#extensions#tabline#enabled=1        " Show the tabline.
+let g:airline#extensions#tabline#buffer_nr_show=1 " Show buffer numbers.
+let g:airline#extensions#tabline#show_tabs=0      " Don't show tabs in tabline.
 
